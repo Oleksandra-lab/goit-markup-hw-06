@@ -397,6 +397,15 @@
               </a>
             </li>
           </ul>          
+        </div>
+        <div class="subscribe-section">
+          <p class="subscribe-section-title">Subscribe</p>
+          <form class="subscribe-section-form" name="subscribe_section_form" >
+            <label>
+              <input type="email" name="user-email" placeholder="E-mail">
+            </label>
+            <button class="btn btn-blue" type="submit">Subscribe </button>
+          </form>
 
         </div>
       </div>      
@@ -408,8 +417,47 @@
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icon.svg#icon-close" >  </use>
           </svg>
-
         </button>
+        <strong> Leave us your contacts and we will call you back </strong>
+        <form class="modal-form" name="contacts form">
+          <label class="modal-form-label" for="user-name">Name</label>
+          <div class="modal-form-field">
+            <input  class="modal-form-input" type="text" name="user_name" id="user_name">
+            <svg class="modal-form-icon"  width="12" height="12" >
+              <use href="../goit-markup-hw-06/images/icon.svg#icon-person" > </use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="user-phone">Phone</label>
+          <div class="modal-form-field">
+            <input  class="modal-form-input" type="tel" name="user_phone" id="user_phone">
+            <svg class="modal-form-icon"  width="13" height="13" >
+              <use href="../goit-markup-hw-06/images/icon.svg#icon-phone" > </use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="user-email">Email</label>
+          <div class="modal-form-field">
+            <input  class="modal-form-input" type="email" name="user_email" id="user_email">
+            <svg class="modal-form-icon"  width="15" height="12" >
+              <use href="../goit-markup-hw-06/images/icon.svg#icon-email-box" > </use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="user-message">Comment</label>
+          <textarea 
+          class="modal-form-message"
+          name="user_message" 
+          id="user_mssage"
+          rows="5"
+          placeholder="Text input"
+          ></textarea>
+          <label class="modal-form-agreement">
+            <input class="modal-form-agreement-box" type="checkbox" name="user_agreement">
+            <span class="modl-form-agreement-text ">
+              I accept the terms and conditions of the
+              <a class="modl-form-agreement-link" href="">Privacy Policy</a>
+            </span>
+          </label>
+          <button class="btn btn-blue" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
