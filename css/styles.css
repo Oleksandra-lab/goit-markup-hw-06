@@ -851,6 +851,7 @@ p {
         color: var(--light-slate);
     }
     .modal-form-agreement-link {
+        color: var(--iris);
     }
     .modal-form-btn {
         display: block ;
