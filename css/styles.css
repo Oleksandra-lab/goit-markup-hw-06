@@ -826,17 +826,26 @@ p {
     }
     .modal-form-agreement-box {
         appearance: none;
-        width: 16px;
-        height: 16px;
-
-        border: 1px solid var(--navy-blue);
-        border-radius: 2px;
-
-        background-image: url("data:image/" ) ;
-        background-repeat: no-repeat ;
-        background-position: center;
-        background-size: 0;
     }
+
+    .modal-form-agreement-unchecked {
+        opacity: 1;
+        transition: var(--animation-fast);
+
+    }
+    input[type="checkbox"]:checked + .modal-form-agreement-icon .modal-form-agreement-icon-unchecked{
+        opacity: 0;
+    }
+
+    .modal-form-agreement-icon-checked {
+        opacity: 0;
+        transition: var(--animation-fast);
+    }
+
+    input[type="checkbox"]:checked + .modal-form-agreement-icon .modal-form-agreement-icon-checked{
+        opacity: 1;
+    }
+
     .modal-form-agreement-text {
         font-size: 12px;
         color: var(--light-slate);
